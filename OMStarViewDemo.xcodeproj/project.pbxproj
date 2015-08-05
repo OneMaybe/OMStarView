@@ -14,6 +14,9 @@
 		6B069E1F1B5522A100F83771 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B069E1E1B5522A100F83771 /* Images.xcassets */; };
 		6B069E221B5522A100F83771 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B069E201B5522A100F83771 /* LaunchScreen.xib */; };
 		6B069E2E1B5522A100F83771 /* OMStarViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B069E2D1B5522A100F83771 /* OMStarViewDemoTests.m */; };
+		6B069E3A1B5522EA00F83771 /* foregroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B069E381B5522EA00F83771 /* foregroundStar.png */; };
+		6B069E3B1B5522EA00F83771 /* backgroundStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B069E391B5522EA00F83771 /* backgroundStar.png */; };
+		6B069E3E1B55231100F83771 /* OMStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B069E3D1B55231100F83771 /* OMStarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		6B069E271B5522A100F83771 /* OMStarViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OMStarViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B069E2C1B5522A100F83771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B069E2D1B5522A100F83771 /* OMStarViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMStarViewDemoTests.m; sourceTree = "<group>"; };
+		6B069E381B5522EA00F83771 /* foregroundStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foregroundStar.png; sourceTree = "<group>"; };
+		6B069E391B5522EA00F83771 /* backgroundStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundStar.png; sourceTree = "<group>"; };
+		6B069E3C1B55231100F83771 /* OMStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMStarView.h; sourceTree = "<group>"; };
+		6B069E3D1B55231100F83771 /* OMStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMStarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,7 @@
 		6B069E101B5522A100F83771 /* OMStarViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6B069E371B5522A800F83771 /* OMStarView */,
 				6B069E151B5522A100F83771 /* AppDelegate.h */,
 				6B069E161B5522A100F83771 /* AppDelegate.m */,
 				6B069E181B5522A100F83771 /* ViewController.h */,
@@ -117,6 +125,18 @@
 				6B069E2C1B5522A100F83771 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B069E371B5522A800F83771 /* OMStarView */ = {
+			isa = PBXGroup;
+			children = (
+				6B069E381B5522EA00F83771 /* foregroundStar.png */,
+				6B069E391B5522EA00F83771 /* backgroundStar.png */,
+				6B069E3C1B55231100F83771 /* OMStarView.h */,
+				6B069E3D1B55231100F83771 /* OMStarView.m */,
+			);
+			name = OMStarView;
+			path = ../OMStarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +222,8 @@
 				6B069E1D1B5522A100F83771 /* Main.storyboard in Resources */,
 				6B069E221B5522A100F83771 /* LaunchScreen.xib in Resources */,
 				6B069E1F1B5522A100F83771 /* Images.xcassets in Resources */,
+				6B069E3A1B5522EA00F83771 /* foregroundStar.png in Resources */,
+				6B069E3B1B5522EA00F83771 /* backgroundStar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B069E3E1B55231100F83771 /* OMStarView.m in Sources */,
 				6B069E1A1B5522A100F83771 /* ViewController.m in Sources */,
 				6B069E171B5522A100F83771 /* AppDelegate.m in Sources */,
 				6B069E141B5522A100F83771 /* main.m in Sources */,

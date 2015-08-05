@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+@class OMStarView;
+
+@protocol OMStarViewDelegate <NSObject>
+@optional
+-(void)starRatingView:(OMStarView *)view score:(float)score;
+
+@end
 
 @interface OMStarView : UIView
+
+- (id)initWithFrame:(CGRect)frame numberOfStar:(int)number;
+@property (nonatomic, readonly) int numberOfStar;
+@property (nonatomic, weak) id <OMStarViewDelegate> delegate;
 
 @end
